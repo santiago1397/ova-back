@@ -2,8 +2,8 @@ import mongoose from 'mongoose'
 
 const ParticipantSchema = new mongoose.Schema(
   {
-    tutor_nationality: { type: String, required: true, },
-    tutor_ci: { type: String, required: true },
+    tutor_nationality: { type: String },
+    tutor_ci: { type: String },
     tutor_firstname: { type: String },
     tutor_secondname: { type: String },
     tutor_firstlastname: { type: String },
@@ -16,11 +16,11 @@ const ParticipantSchema = new mongoose.Schema(
     tutor_state: { type: Object },
     tutor_municipality: { type: Object },
     tutor_parish: { type: Object },
-    
+
     tutor_institution: { type: String },
     tutor_especiality: { type: String },
-    
-    
+
+
     student_hasCI: { type: String },
     student_nationality: { type: String },
     student_CI: { type: String, required: true, unique: true },
@@ -39,7 +39,7 @@ const ParticipantSchema = new mongoose.Schema(
     student_municipality: { type: Object },
     student_parish: { type: Object },
     student_address: { type: String },
-    
+
     student_disability: { type: String },
     student_grade: { type: String },
     student_shirtSize: { type: String },
@@ -47,7 +47,7 @@ const ParticipantSchema = new mongoose.Schema(
     student_pcaccess: { type: String },
     student_internetaccess: { type: String },
     student_moreinfosubs: { type: String },
-   
+
 
   },
 
