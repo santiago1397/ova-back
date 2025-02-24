@@ -12,6 +12,7 @@ const app = express()
 
 const corsOptions = {
     origin: process.env.FRONT_URL,
+    credentials: true,            //access-control-allow-credentials:true
     optionSuccessStatus: 200
 }
 
